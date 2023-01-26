@@ -1,10 +1,14 @@
 import Navbar from "./Navbar";
 
-export default function Hero() {
+interface Props {
+    page: string
+}
+
+export default function Hero({ page }: Props) {
     return(
         <div className="w-full">
             <div>
-                <Navbar />
+                <Navbar page={page} />
             </div>
         </div>
     )
