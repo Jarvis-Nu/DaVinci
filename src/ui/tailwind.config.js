@@ -9,6 +9,9 @@ module.exports = {
     extend: {
       textColor: {
         "purple": "#6927FF"
+      },
+      backgroundColor: {
+        "purple": "#6927FF"
       }
     },
   },
