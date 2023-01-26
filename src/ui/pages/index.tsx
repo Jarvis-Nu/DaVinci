@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Hero from '../components/Hero'
 
 const Home: NextPage = () => {
   return (
@@ -8,7 +9,9 @@ const Home: NextPage = () => {
         <title>Amadeus</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='w-full h-full'></main>
+      <main className='w-full h-full'>
+        <Hero />
+      </main>
     </div>
   )
 }
