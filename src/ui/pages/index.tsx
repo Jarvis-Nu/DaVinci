@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Ecosystem from '../components/Ecosystem'
+import Footer from '../components/Footer'
 import GetStarted from '../components/GetStarted'
 import Hero from '../components/Hero'
 import Introduction from '../components/Introduction'
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
         <GetStarted />
         <Introduction />
         <Ecosystem />
+        <Footer />
       </main>
     </div>
   )
