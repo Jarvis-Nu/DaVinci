@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import GetStarted from '../components/GetStarted'
 import Hero from '../components/Hero'
+import Introduction from '../components/Introduction'
 
 const Home: NextPage = () => {
   return (
@@ -13,6 +14,7 @@ const Home: NextPage = () => {
       <main className='w-full h-full'>
         <Hero page={"home"} />
         <GetStarted />
+        <Introduction />
       </main>
     </div>
   )

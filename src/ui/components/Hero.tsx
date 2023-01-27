@@ -12,8 +12,8 @@ export default function Hero({ page }: Props) {
                 <Navbar page={page} />
             </div>
             <div className="w-full p-[20px] sm:px-[40px] sm:py-[25px] xl:px-[100px] h-full mt-28 lg:mt-36">
-                <div className="w-full flex flex-col lg:flex-row justify-between items-center">
-                    <div className="w-full max-w-[700px] space-y-5">
+                <div className="w-full flex flex-col lg:flex-row justify-center lg:space-x-10 items-center">
+                    <div className="w-full max-w-[500px] lg:max-w-[700px] space-y-5">
                         <h1 className="text-[36px] leading-[44px] text-center lg:text-start lg:text-[60px] lg:leading-[73px] font-semibold">
                             A <span className="text-purple underline underline-offset-8">Decentralized</span> Audio 
                         Curation Platform and Database <span className="text-purple underline underline-offset-8">DAO</span>
