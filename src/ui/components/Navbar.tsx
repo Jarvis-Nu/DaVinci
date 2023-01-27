@@ -8,9 +8,8 @@ interface Props {
 
 export default function Navbar({ page }: Props) {
     return(
-        <div className="w-full">
-            <div className="w-full p-[20px] sm:px-[40px] sm:py-[25px] xl:px-[100px] lg:py-[25px] flex justify-between items-center fixed
-            inset-x-0 top-0 shadow-md shadow-black/10">
+        <div className="w-full absolute inset-x-0 top-0">
+            <div className="w-full p-[20px] sm:px-[40px] sm:py-[25px] xl:px-[100px] lg:py-[25px] flex justify-between items-center shadow-md shadow-black/10 bg-white">
                 <div className="relative max-w-[140px] lg:max-w-[250px] max-h-[50px]">
                     <Image src={"/logo.png"} width={250} height={50} alt={""} />
                 </div>
