@@ -14,7 +14,7 @@ export default function Footer(){
                 </div>
             </div>
             <div className="max-w-[300px] md:max-w-[350px] lg:max-w-[550px] space-y-5 sm:flex flex-col justify-center items-center">
-                <h5 className="text-[24px] leading-[24px] font-semibold">Subscribe to our newsletter</h5>
+                <h5 className="text-[24px] leading-[24px] font-semibold w-full text-center md:text-left">Subscribe to our newsletter</h5>
                 <div className="flex">
                     <input type="email" placeholder="Enter you email" className="w-[300px] bg-purple/10 p-2.5 rounded-3xl placeholder-black outline-none" />
                     <button className="bg-purple text-white py-2.5 px-8 rounded-3xl -ml-20">Subscribe</button>
