@@ -24,7 +24,7 @@ export default function Footer(){
                         Stay in the loop and be the first to know with our exclusive newsletter! Subscribe now and never miss a thing
                     </h6>
                 </div>
-                <div className="flex justify-center items-center md:justify-start space-x-1.5">
+                <div className="flex justify-center items-center md:justify-start w-full space-x-1.5">
                     <Link href={"/"}>
                         <div className="relative max-w-[20px] max-h-[20px]">
                             <Image src={"/twitter.png"} width={20} height={20} alt="" />
