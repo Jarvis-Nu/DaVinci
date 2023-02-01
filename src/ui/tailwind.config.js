@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       textColor: {
-        "purple": "#6927FF"
+        "purple": "#6927FF",
+        "ink": "#16004A"
       },
       backgroundColor: {
         "purple": "#6927FF",
