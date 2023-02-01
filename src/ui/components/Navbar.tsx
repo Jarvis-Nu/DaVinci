@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { MenuAlt3Icon } from "@heroicons/react/solid"
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 interface Props {
     page: string
@@ -13,21 +14,25 @@ export default function Navbar({ page }: Props) {
                 <div className="relative max-w-[140px] lg:max-w-[250px] max-h-[50px]">
                     <Image src={"/logo.png"} width={250} height={50} alt={""} />
                 </div>
-                <div className="sm:flex space-x-[40px] hidden">
-                    <Link href={"/"} className={`font-semibold text-purple ${page == "home" ? "underline" : "hover:underline"} underline-offset-8 decoration-2`}>Upload</Link>
-                    <Link href={"/"} className={`font-semibold ${page == "connect" ? "underline text-purple" : "hover:underline hover:text-purple"}
-                    underline-offset-8 decoration-2`}>Connect</Link>
+                <div className="sm:flex space-x-[40px] hidden items-center">
+                    <Link href={"/"} className={`font-semibold ${page == "home" ? "underline text-purple" : "hover:underline"} underline-offset-8 decoration-2`}>Home</Link>
+                    <Link href={"/upload"} className={`font-semibold ${page == "upload" ? "underline text-purple" : "hover:underline hover:text-purple"}
+                    underline-offset-8 decoration-2`}>Upload</Link>
+                    <ConnectButton chainStatus="icon" accountStatus={{smallScreen: 'avatar', largeScreen: 'full'}} showBalance={{smallScreen: false, largeScreen: true}} />
                 </div>
                 <button className="sm:hidden" onClick={() => document.querySelector(".sidebar")?.classList.toggle("-translate-x-full")}>
                     <MenuAlt3Icon className="w-[40px] h-[40px]" />
                 </button>
             </div>
             <div className="w-64 shadow-lg shadow-black/10 h-screen absolute inset-y-0 left-0 z-20 bg-white 
-            -translate-x-full sidebar translation duration-300 ease-in-out p-[20px]">
+            -translate-x-full sidebar translation duration-300 ease-in-out p-[20px] sm:hidden">
             <div className="flex flex-col space-y-[15px]">
-                <Link href={"/"} className={`font-semibold text-purple ${page == "home" ? "underline" : "hover:underline"} underline-offset-8 decoration-2`}>Upload</Link>
-                <Link href={"/"} className={`font-semibold ${page == "connect" ? "underline text-purple" : "hover:underline hover:text-purple"}
-                underline-offset-8 decoration-2`}>Connect</Link>
+                <ConnectButton chainStatus="icon" accountStatus={{smallScreen: 'avatar', largeScreen: 'full'}} showBalance={{smallScreen: false, largeScreen: true}} />
+                <Link href={"/"} className={`font-semibold ${page == "home" ? "underline text-purple" : "hover:underline"} underline-offset-8 decoration-2`}>
+                    Home
+                </Link>
+                <Link href={"/upload"} className={`font-semibold ${page == "upload" ? "underline text-purple" : "hover:underline hover:text-purple"}
+                underline-offset-8 decoration-2`}>Upload</Link>
             </div>
             </div>
         </div>
