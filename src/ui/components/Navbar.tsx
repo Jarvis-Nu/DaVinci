@@ -15,7 +15,8 @@ export default function Navbar({ page }: Props) {
                     <Image src={"/logo.png"} width={250} height={50} alt={""} />
                 </div>
                 <div className="sm:flex space-x-[40px] hidden items-center">
-                    <Link href={"/"} className={`font-semibold ${page == "home" ? "underline text-purple" : "hover:underline"} underline-offset-8 decoration-2`}>Home</Link>
+                    <Link href={"/"} className={`font-semibold ${page == "home" ? "underline text-purple" : "hover:underline hover:text-purple"}
+                     underline-offset-8 decoration-2`}>Home</Link>
                     <Link href={"/upload"} className={`font-semibold ${page == "upload" ? "underline text-purple" : "hover:underline hover:text-purple"}
                     underline-offset-8 decoration-2`}>Upload</Link>
                     <ConnectButton chainStatus="icon" accountStatus={{smallScreen: 'avatar', largeScreen: 'full'}} showBalance={{smallScreen: false, largeScreen: true}} />
@@ -28,7 +29,8 @@ export default function Navbar({ page }: Props) {
             -translate-x-full sidebar translation duration-300 ease-in-out p-[20px] sm:hidden">
             <div className="flex flex-col space-y-[15px]">
                 <ConnectButton chainStatus="icon" accountStatus={{smallScreen: 'avatar', largeScreen: 'full'}} showBalance={{smallScreen: false, largeScreen: true}} />
-                <Link href={"/"} className={`font-semibold ${page == "home" ? "underline text-purple" : "hover:underline"} underline-offset-8 decoration-2`}>
+                <Link href={"/"} className={`font-semibold ${page == "home" ? "underline text-purple" : "hover:underline hover:text-purple"}
+                 underline-offset-8 decoration-2`}>
                     Home
                 </Link>
                 <Link href={"/upload"} className={`font-semibold ${page == "upload" ? "underline text-purple" : "hover:underline hover:text-purple"}
