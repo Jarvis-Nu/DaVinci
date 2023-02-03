@@ -9,7 +9,8 @@ module.exports = {
     extend: {
       textColor: {
         "purple": "#6927FF",
-        "ink": "#16004A"
+        "ink": "#16004A",
+        "ash": "#7B7A7A"
       },
       backgroundColor: {
         "purple": "#6927FF",
