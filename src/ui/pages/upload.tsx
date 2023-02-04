@@ -60,7 +60,7 @@ export default function Upload() {
                     </div>
                     <div className="w-full p-20 bg-purple/10 rounded-3xl flex flex-col justify-center items-center space-y-2 hover:cursor-pointer" onClick={() => {
                         const fileRef: any = ref.current
-                        fileRef.click()
+                        fileRef?.click()
                     }} onDragEnter={handleDrag} onDragLeave={handleDrag} onDragOver={handleDrag} onDrop={handleDrop}>
                         <div className="w-full flex flex-col items-center justify-center">
                             <div>
@@ -107,28 +107,72 @@ export default function Upload() {
                                 </td>
                             </tr>
                             <tr className="flex w-full justify-between border-x-2 border-b-2 border-b-purple/10 border-ash items-center p-2.5">
-                                <td className="flex-1 text-center">16</td>
-                                <td className="flex-1 text-center">16</td>
-                                <td className="flex-1 text-center">16</td>
-                                <td className="flex-1 text-center">16</td>
+                                <td className="flex-1 w-full flex justify-center items-center">
+                                    <div className="flex items-center space-x-2">
+                                        <div><Image src={"/file.png"} width={10} height={10} alt="" /></div>
+                                        <p className="text-purple font-semibold text-center w-full hover:cursor-pointer">Lorem ipsum dolor sit</p>
+                                    </div>
+                                </td>
+                                <td className="flex-1 w-full flex justify-center items-center">
+                                    <p className="text-purple font-semibold text-center w-full">Feb 08, 2023</p>
+                                </td>
+                                <td className="flex-1 w-full flex justify-center items-center">
+                                    <p className="text-purple font-semibold text-center w-full">5.8 MB</p>
+                                </td>
+                                <td className="flex-1 w-full flex justify-center items-center">
+                                    <p className="text-purple font-semibold text-center w-full">Feb 08, 2023</p>
+                                </td>
                             </tr>
                             <tr className="flex w-full justify-between border-x-2 border-b-2 border-b-purple/10 border-ash items-center p-2.5">
-                                <td className="flex-1 text-center">16</td>
-                                <td className="flex-1 text-center">16</td>
-                                <td className="flex-1 text-center">16</td>
-                                <td className="flex-1 text-center">16</td>
+                                <td className="flex-1 w-full flex justify-center items-center">
+                                    <div className="flex items-center space-x-2">
+                                        <div><Image src={"/file.png"} width={10} height={10} alt="" /></div>
+                                        <p className="text-purple font-semibold text-center w-full hover:cursor-pointer">Lorem ipsum dolor sit</p>
+                                    </div>
+                                </td>
+                                <td className="flex-1 w-full flex justify-center items-center">
+                                    <p className="text-purple font-semibold text-center w-full">Feb 08, 2023</p>
+                                </td>
+                                <td className="flex-1 w-full flex justify-center items-center">
+                                    <p className="text-purple font-semibold text-center w-full">5.8 MB</p>
+                                </td>
+                                <td className="flex-1 w-full flex justify-center items-center">
+                                    <p className="text-purple font-semibold text-center w-full">Feb 08, 2023</p>
+                                </td>
                             </tr>
                             <tr className="flex w-full justify-between border-x-2 border-b-2 border-b-purple/10 border-ash items-center p-2.5">
-                                <td className="flex-1 text-center">16</td>
-                                <td className="flex-1 text-center">16</td>
-                                <td className="flex-1 text-center">16</td>
-                                <td className="flex-1 text-center">16</td>
+                                <td className="flex-1 w-full flex justify-center items-center">
+                                    <div className="flex items-center space-x-2">
+                                        <div><Image src={"/file.png"} width={10} height={10} alt="" /></div>
+                                        <p className="text-purple font-semibold text-center w-full hover:cursor-pointer">Lorem ipsum dolor sit</p>
+                                    </div>
+                                </td>
+                                <td className="flex-1 w-full flex justify-center items-center">
+                                    <p className="text-purple font-semibold text-center w-full">Feb 08, 2023</p>
+                                </td>
+                                <td className="flex-1 w-full flex justify-center items-center">
+                                    <p className="text-purple font-semibold text-center w-full">5.8 MB</p>
+                                </td>
+                                <td className="flex-1 w-full flex justify-center items-center">
+                                    <p className="text-purple font-semibold text-center w-full">Feb 08, 2023</p>
+                                </td>
                             </tr>
                             <tr className="flex w-full justify-between border-x-2 border-b-2 border-b-purple/10 border-ash items-center p-2.5 rounded-b-3xl">
-                                <td className="flex-1 text-center">16</td>
-                                <td className="flex-1 text-center">16</td>
-                                <td className="flex-1 text-center">16</td>
-                                <td className="flex-1 text-center">16</td>
+                                <td className="flex-1 w-full flex justify-center items-center">
+                                    <div className="flex items-center space-x-2">
+                                        <div><Image src={"/file.png"} width={10} height={10} alt="" /></div>
+                                        <p className="text-purple font-semibold text-center w-full hover:cursor-pointer">Lorem ipsum dolor sit</p>
+                                    </div>
+                                </td>
+                                <td className="flex-1 w-full flex justify-center items-center">
+                                    <p className="text-purple font-semibold text-center w-full">Feb 08, 2023</p>
+                                </td>
+                                <td className="flex-1 w-full flex justify-center items-center">
+                                    <p className="text-purple font-semibold text-center w-full">5.8 MB</p>
+                                </td>
+                                <td className="flex-1 w-full flex justify-center items-center">
+                                    <p className="text-purple font-semibold text-center w-full">Feb 08, 2023</p>
+                                </td>
                             </tr>
                         </table>
                     </div>
