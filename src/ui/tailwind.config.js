@@ -15,6 +15,10 @@ module.exports = {
       backgroundColor: {
         "purple": "#6927FF",
         "ash": "#6927FF0D"
+      },
+      borderColor: {
+        "purple": "#6927FF",
+        "ash": "#6927FF0D"
       }
     },
   },
