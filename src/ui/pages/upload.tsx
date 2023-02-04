@@ -1,9 +1,8 @@
-import { SearchIcon } from "@heroicons/react/solid";
+import { ChevronDownIcon, ChevronUpIcon,  SearchIcon } from "@heroicons/react/solid";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Image from "next/image";
 import { Fragment, useRef, useState } from "react";
-import { CheckCircleIcon } from "@heroicons/react/solid"
 import { Dialog, Transition } from "@headlessui/react"
 
 export default function Upload() {
@@ -73,6 +72,65 @@ export default function Upload() {
                             </div>
                         </div>
                         <input type="file" ref={ref}  className="hidden" onChange={handleChange} />
+                    </div>
+                    <div className="w-full space-y-5">
+                        <p className="text-ink font-semibold text-[24px]">Your files</p>
+                        <table className="w-full">
+                            <tr className="flex w-full justify-between border-2 border-ash rounded-t-3xl p-2.5">
+                                <td className="flex items-center flex-1 space-x-1.5 justify-center">
+                                    <p className="text-ash font-semibold">Name</p>
+                                    <div>
+                                        <ChevronUpIcon className="w-3 h-3 text-ash hover:cursor-pointer" />
+                                        <ChevronDownIcon className="w-3 h-3 text-ash hover:cursor-pointer" />
+                                    </div>
+                                </td>
+                                <td className="flex items-center flex-1 space-x-1.5 justify-center">
+                                    <p className="text-ash font-semibold">Published Date</p>
+                                    <div>
+                                        <ChevronUpIcon className="w-3 h-3 text-ash hover:cursor-pointer" />
+                                        <ChevronDownIcon className="w-3 h-3 text-ash hover:cursor-pointer" />
+                                    </div>
+                                </td>
+                                <td className="flex items-center flex-1 space-x-1.5 justify-center">
+                                    <p className="text-ash font-semibold">File Size</p>
+                                    <div>
+                                        <ChevronUpIcon className="w-3 h-3 text-ash hover:cursor-pointer" />
+                                        <ChevronDownIcon className="w-3 h-3 text-ash hover:cursor-pointer" />
+                                    </div>
+                                </td>
+                                <td className="flex items-center flex-1 space-x-1.5 justify-center">
+                                    <p className="text-ash font-semibold">Last Modified</p>
+                                    <div>
+                                        <ChevronUpIcon className="w-3 h-3 text-ash hover:cursor-pointer" />
+                                        <ChevronDownIcon className="w-3 h-3 text-ash hover:cursor-pointer" />
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr className="flex w-full justify-between border-x-2 border-b-2 border-b-purple/10 border-ash items-center p-2.5">
+                                <td className="flex-1 text-center">16</td>
+                                <td className="flex-1 text-center">16</td>
+                                <td className="flex-1 text-center">16</td>
+                                <td className="flex-1 text-center">16</td>
+                            </tr>
+                            <tr className="flex w-full justify-between border-x-2 border-b-2 border-b-purple/10 border-ash items-center p-2.5">
+                                <td className="flex-1 text-center">16</td>
+                                <td className="flex-1 text-center">16</td>
+                                <td className="flex-1 text-center">16</td>
+                                <td className="flex-1 text-center">16</td>
+                            </tr>
+                            <tr className="flex w-full justify-between border-x-2 border-b-2 border-b-purple/10 border-ash items-center p-2.5">
+                                <td className="flex-1 text-center">16</td>
+                                <td className="flex-1 text-center">16</td>
+                                <td className="flex-1 text-center">16</td>
+                                <td className="flex-1 text-center">16</td>
+                            </tr>
+                            <tr className="flex w-full justify-between border-x-2 border-b-2 border-b-purple/10 border-ash items-center p-2.5 rounded-b-3xl">
+                                <td className="flex-1 text-center">16</td>
+                                <td className="flex-1 text-center">16</td>
+                                <td className="flex-1 text-center">16</td>
+                                <td className="flex-1 text-center">16</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </main>
