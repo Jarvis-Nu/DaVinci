@@ -77,63 +77,63 @@ export default function Upload() {
                 </div>
             </main>
             <div>
-            <Transition.Root show={open} as={Fragment}>
-                <Dialog
-                    as="div"
-                    className="fixed z-10 inset-0 overflow-y-auto"
-                    onClose={() => setOpen(false)}
-                >
-                    <div className="flex items-center justify-center
-                        min-h-[800px] sm:min-h-screen pt-4 pb-20
-                        text-center sm:block sm:p-0"
+                <Transition.Root show={open} as={Fragment}>
+                    <Dialog
+                        as="div"
+                        className="fixed z-10 inset-0 overflow-y-auto"
+                        onClose={() => setOpen(false)}
                     >
-                        <Transition.Child
-                            as={Fragment}
-                            enter="ease-out duration-200"
-                            enterFrom="opacity-0"
-                            enterTo="opacity-100"
-                            leave="ease-in duration-200"
-                            leaveFrom="opacity-100"
-                            leaveTo="opacity-0"
+                        <div className="flex items-center justify-center
+                            min-h-[800px] sm:min-h-screen pt-4 pb-20
+                            text-center sm:block sm:p-0"
                         >
-                            <Dialog.Overlay
-                                className="fixed inset-0 bg-gray-500 bg-opacity-75
-                                transition-opacity"
-                            />
-                        </Transition.Child>
-                        <span className="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">
-                            &#8203;
-                        </span>
-                        <Transition.Child
-                            as={Fragment}
-                            enter="ease-out duration-300"
-                            enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-                            enterTo="opacity-100 translate-y-0 sm:scale-100"
-                            leave="ease-in duration-200"
-                            leaveFrom="opacity-100 translate-y-0 sm:scale-100"
-                            leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-                        >
-                            <div className="inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left
-                        overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
-                            <div className="space-y-1.5">
+                            <Transition.Child
+                                as={Fragment}
+                                enter="ease-out duration-200"
+                                enterFrom="opacity-0"
+                                enterTo="opacity-100"
+                                leave="ease-in duration-200"
+                                leaveFrom="opacity-100"
+                                leaveTo="opacity-0"
+                            >
+                                <Dialog.Overlay
+                                    className="fixed inset-0 bg-gray-500 bg-opacity-75
+                                    transition-opacity"
+                                />
+                            </Transition.Child>
+                            <span className="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">
+                                &#8203;
+                            </span>
+                            <Transition.Child
+                                as={Fragment}
+                                enter="ease-out duration-300"
+                                enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                                enterTo="opacity-100 translate-y-0 sm:scale-100"
+                                leave="ease-in duration-200"
+                                leaveFrom="opacity-100 translate-y-0 sm:scale-100"
+                                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                            >
+                                <div className="inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left
+                            overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
                                 <div className="space-y-1.5">
-                                    <p className="text-ink font-semibold text-[24px]">Name of file <span className="text-red-500">*</span></p>
-                                    <input type={"text"} className="w-full p-2.5 border-2 border-ash rounded-xl outline-none" placeholder="Your file name here" />
-                                </div>
-                                <div className="space-y-1.5">
-                                    <p className="text-ink font-semibold text-[24px]">Description <span className="text-red-500">*</span></p>
-                                    <textarea className="w-full border-2 p-2.5 border-ash rounded-xl h-40 outline-none" placeholder="Describe this file" />
-                                </div>
-                                <div className="flex space-x-2.5 justify-end">
-                                    <button className="px-10 py-2.5 bg-white border-purple border-2 rounded-3xl text-purple" onClick={() => setOpen(false)}>Cancel</button>
-                                    <button className="px-10 py-2.5 bg-purple rounded-3xl text-white">Confirm</button>
+                                    <div className="space-y-1.5">
+                                        <p className="text-ink font-semibold text-[24px]">Name of file <span className="text-red-500">*</span></p>
+                                        <input type={"text"} className="w-full p-2.5 border-2 border-ash rounded-xl outline-none" placeholder="Your file name here" />
+                                    </div>
+                                    <div className="space-y-1.5">
+                                        <p className="text-ink font-semibold text-[24px]">Description <span className="text-red-500">*</span></p>
+                                        <textarea className="w-full border-2 p-2.5 border-ash rounded-xl h-40 outline-none" placeholder="Describe this file" />
+                                    </div>
+                                    <div className="flex space-x-2.5 justify-end">
+                                        <button className="px-10 py-2.5 bg-white border-purple border-2 rounded-3xl text-purple" onClick={() => setOpen(false)}>Cancel</button>
+                                        <button className="px-10 py-2.5 bg-purple rounded-3xl text-white">Confirm</button>
+                                    </div>
                                 </div>
                             </div>
+                            </Transition.Child>
                         </div>
-                        </Transition.Child>
-                    </div>
-                </Dialog>
-            </Transition.Root>
+                    </Dialog>
+                </Transition.Root>
             </div>
         </div>
     )
