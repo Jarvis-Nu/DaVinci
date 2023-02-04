@@ -19,7 +19,9 @@ export default function Navbar({ page }: Props) {
                      underline-offset-8 decoration-2`}>Home</Link>
                     <Link href={"/upload"} className={`font-semibold ${page == "upload" ? "underline text-purple" : "hover:underline hover:text-purple"}
                     underline-offset-8 decoration-2`}>Upload</Link>
-                    <ConnectButton chainStatus="icon" accountStatus={{smallScreen: 'avatar', largeScreen: 'full'}} showBalance={{smallScreen: false, largeScreen: true}} />
+                    <div className="bg-purple px-1.5 py-1 rounded-3xl relative">
+                        <ConnectButton chainStatus="icon" accountStatus={{smallScreen: 'avatar', largeScreen: 'full'}} showBalance={{smallScreen: false, largeScreen: true}} />
+                    </div>
                 </div>
                 <button className="sm:hidden" onClick={() => document.querySelector(".sidebar")?.classList.toggle("-translate-x-full")}>
                     <MenuAlt3Icon className="w-[40px] h-[40px]" />
@@ -28,7 +30,10 @@ export default function Navbar({ page }: Props) {
             <div className="w-64 shadow-lg shadow-black/10 h-screen absolute inset-y-0 left-0 z-20 bg-white 
             -translate-x-full sidebar translation duration-300 ease-in-out p-[20px] sm:hidden">
             <div className="flex flex-col space-y-[15px]">
-                <ConnectButton chainStatus="icon" accountStatus={{smallScreen: 'avatar', largeScreen: 'full'}} showBalance={{smallScreen: false, largeScreen: true}} />
+                <ConnectButton 
+                    chainStatus="icon"
+                    accountStatus={{smallScreen: 'avatar', largeScreen: 'full'}}
+                    showBalance={{smallScreen: false, largeScreen: true}} />
                 <Link href={"/"} className={`font-semibold ${page == "home" ? "underline text-purple" : "hover:underline hover:text-purple"}
                  underline-offset-8 decoration-2`}>
                     Home
