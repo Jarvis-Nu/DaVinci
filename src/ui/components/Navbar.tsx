@@ -19,7 +19,7 @@ export default function Navbar({ page }: Props) {
                      underline-offset-8 decoration-2`}>Home</Link>
                     <Link href={"/upload"} className={`font-semibold ${page == "upload" ? "underline text-purple" : "hover:underline hover:text-purple"}
                     underline-offset-8 decoration-2`}>Upload</Link>
-                    <div className="bg-purple px-1.5 py-1 rounded-3xl relative">
+                    <div>
                         <ConnectButton chainStatus="icon" accountStatus={{smallScreen: 'avatar', largeScreen: 'full'}} showBalance={{smallScreen: false, largeScreen: true}} />
                     </div>
                 </div>
